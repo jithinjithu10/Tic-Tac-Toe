@@ -1,0 +1,164 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.name-input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff00ff; /* Pink for the button */
+  color: black;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ffff; /* Blue for the button */
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+  width: 450px;
+}
+
+.player-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+
+.player-1 {
+  color: #ff00ff;
+}
+
+.player-2 {
+  color: #00ffff;
+}
+
+.player-avatar {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 255, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+}
+
+.cell.x {
+  color: #ff00ff;
+}
+
+.cell.o {
+  color: #00ffff;
+}
+
+.winner-announcement {
+  font-size: 1.5rem;
+  color: #00ff00;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff00ff;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ffff;
+}
+
+.cell.x.highlight-winner {
+  box-shadow: 0 0 8px 5px #ff00ff, 0 0 12px 5px #ff00ff;
+}
+
+.cell.o.highlight-winner {
+  box-shadow: 0 0 8px 5px #00ffff, 0 0 12px 5px #00ffff;
+}
